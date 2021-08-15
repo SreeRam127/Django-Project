@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}result/{% endblock title %}
+{% block bookactive %}{% endblock bookactive %}
+{% block css %}
+<style>
+footer {
+            position: relative;
+            left: 0;
+            float:bottom;
+            width: 100%;
+            padding-bottom: 6px;
+            background-color: rgb(2, 32, 77);
+            color: white;
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 57px;
+      }
+     #container {
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: -21px;
+     }
+     .primary-container {
+           width: 275px;
+           height: 418px;
+           /* border: 2px solid black; */
+           text-align: center;
+           border-radius: 6px;
+           margin: 57px;
+     }      
+</style>
+
+{% endblock css %}
+{% block body %}
+<h1 class="text-center">Search List</h1>
+{% for content in contents %}
+<div class="row container">
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{content.url}}" alt="Loading..">
+            </div>
+            <strong>{{content.title}}</strong>
+            <p>₹{{content.price}}</p>
+            <p>{{content.desc}}</p>
+      </div>
+      </div>
+      {% if result == 0 %}
+      <h1>No Element</h1>
+      {% endif %}
+
+{% endfor %}
+{% endblock body %}

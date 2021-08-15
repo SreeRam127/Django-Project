@@ -1,0 +1,18 @@
+h1{
+    color: white;
+    text-decoration: none;
+}
+.primary-container{
+    display: flex;
+    margin-top: 20px;
+    width: 210px;
+    height: 500px;
+    border: 2px solid black;
+}
+#inner-div{
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+

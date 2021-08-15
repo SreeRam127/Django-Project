@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block title %}Book-Library{% endblock title %}
+{% block bookactive %}{% endblock bookactive %}
+{% block css %}
+<style>
+      #container {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 0px;
+      }
+
+      .primary-container {
+            width: 275px;
+            height: 418px;
+            /* border: 2px solid black; */
+            text-align: center;
+            border-radius: 6px;
+            margin: 57px;
+      }
+
+      footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 6px;
+            background-color: rgb(2, 32, 77);
+            color: white;
+            text-align: center;
+            margin-bottom: 0px;
+      }
+</style>
+
+{% endblock css %}
+{% block body %}
+<h1 class="text-center">Notes And Books</h1>
+{% for task in book %}
+<div id="container">
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}}</strong>
+            <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}}</strong>
+            <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}}</strong>
+             <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}}</strong>
+             <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+</div>
+<div id="container">
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}}</strong>
+             <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}}</strong>
+             <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}} </strong>
+             <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+
+      <div class="primary-container">
+            <div id='inner-div'>
+                  <img src="{{task.url}}" alt="Loading..">
+            </div>
+            <strong>{{task.title}}</strong>
+             <p>"₹"{{task.price}}</p>
+            <p>{{task.desc}}</p>
+      </div>
+</div>
+{% endfor %}
+{% endblock body %}

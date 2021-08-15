@@ -1,0 +1,29 @@
+h1{
+    color: rgb(7, 5, 5);
+}
+body{
+    background: url('../color.jpg');
+}
+
+input{
+    border: none;
+    outline:none;
+    background-color: rgb(216, 253, 7);
+}
+#address{
+    background: none;
+    border: none;
+    outline:none;
+    border: 2px solid black;
+    background-color: rgb(216, 253, 7);
+}
+::placeholder{
+    color: black;
+    font-weight: 600;
+    
+}
+label{
+    color: black;
+    font-weight: 600;
+    
+}
